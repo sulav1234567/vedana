@@ -20,10 +20,7 @@
     font-size: var(--font-size-4xl);
     text-align: center;
     margin-bottom: var(--spacing-sm);
-    background: linear-gradient(135deg, #7C3AED 0%, #A855F7 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--primary-600);
     font-weight: 800;
     letter-spacing: -0.5px;
 }
@@ -46,27 +43,22 @@
 
 .companion-card {
     background: var(--bg-primary);
-    border: 1.5px solid var(--border-light);
+    border: 1px solid var(--border-light);
     padding: var(--spacing-xl);
     border-radius: var(--radius-xl);
     text-align: center;
     position: relative;
     cursor: pointer;
-    transition: all var(--transition-base);
-    box-shadow: var(--shadow-md);
+    transition: background var(--transition-base);
 }
 
 .companion-card:hover {
-    border-color: var(--border-medium);
-    box-shadow: var(--shadow-lg);
-    transform: translateY(-8px);
+    background: var(--bg-secondary);
 }
 
 .companion-card.selected {
     border-color: var(--primary-600);
-    border-width: 2px;
     background: var(--bg-active);
-    box-shadow: var(--shadow-xl);
 }
 
 /* ===== COMPANION BADGES ===== */
@@ -104,13 +96,10 @@
     align-items: center;
     justify-content: center;
     font-size: 3.5rem;
-    transition: all var(--transition-base);
-    box-shadow: var(--shadow-lg);
 }
 
 .companion-card:hover .companion-icon {
-    transform: scale(1.1);
-    box-shadow: var(--shadow-xl);
+    /* No transform on hover */
 }
 
 .companion-card h2 {
@@ -185,12 +174,10 @@
 /* ===== INFO PANEL ===== */
 .companion-info-panel {
     background: var(--bg-primary);
-    border: 1.5px solid var(--border-light);
+    border: 1px solid var(--border-light);
     padding: var(--spacing-xl);
     border-radius: var(--radius-xl);
     text-align: center;
-    animation: fadeIn 0.5s ease-out;
-    box-shadow: var(--shadow-md);
 }
 
 .companion-info-panel.hidden {

@@ -185,41 +185,35 @@ a:hover {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, var(--primary-600) 0%, var(--primary-700) 100%);
+    background: var(--primary-600);
     color: white;
-    border: 1px solid var(--primary-700);
-    box-shadow: var(--shadow-md);
+    border: 1px solid var(--primary-600);
     z-index: 1;
 }
 
 .btn-primary:hover {
-    background: linear-gradient(135deg, var(--primary-700) 0%, var(--primary-600) 100%);
-    box-shadow: var(--shadow-lg);
-    transform: translateY(-2px);
+    background: var(--primary-700);
 }
 
 .btn-primary:active {
-    transform: translateY(0);
+    background: var(--primary-600);
 }
 
 .btn-secondary {
     background: var(--bg-primary);
     color: var(--text-primary);
-    border: 1.5px solid var(--border-light);
+    border: 1px solid var(--border-light);
     z-index: 1;
 }
 
 .btn-secondary:hover {
     background: var(--bg-tertiary);
-    border-color: var(--border-medium);
-    box-shadow: var(--shadow-sm);
+    border-color: var(--border-light);
 }
 
 .btn:disabled {
     opacity: 0.5;
     cursor: not-allowed;
-    box-shadow: none;
-    transform: none;
 }
 
 /* ===== CARD STYLES ===== */
@@ -228,14 +222,11 @@ a:hover {
     border: 1px solid var(--border-light);
     border-radius: var(--radius-lg);
     padding: var(--spacing-md);
-    transition: all var(--transition-base);
-    box-shadow: var(--shadow-sm);
+    transition: background var(--transition-base);
 }
 
 .card:hover {
-    border-color: var(--border-medium);
-    box-shadow: var(--shadow-md);
-    transform: translateY(-4px);
+    background: var(--bg-secondary);
 }
 
 .card-header {
@@ -269,11 +260,11 @@ a:hover {
     width: 100%;
     padding: 14px 16px;
     background: var(--bg-primary);
-    border: 1.5px solid var(--border-light);
+    border: 1px solid var(--border-light);
     border-radius: var(--radius-md);
     color: var(--text-primary);
     font-size: var(--font-size-base);
-    transition: all var(--transition-base);
+    transition: border-color var(--transition-base);
     font-family: inherit;
 }
 
@@ -281,7 +272,6 @@ a:hover {
     outline: none;
     border-color: var(--primary-600);
     background: var(--bg-primary);
-    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.1);
 }
 
 .input::placeholder {
