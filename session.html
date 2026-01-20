@@ -16,7 +16,9 @@
         <header class="session-header glass">
             <div class="session-header-left">
                 <div class="companion-avatar-small" id="sessionCompanion">
-                    <span>🤖</span>
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="#4747B8">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+                    </svg>
                 </div>
                 <div class="session-title">
                     <h1 id="lessonTitle">Python Variables & Data Types</h1>
@@ -38,11 +40,18 @@
                             Your browser does not support the video tag.
                         </video>
                         <div class="play-overlay" id="playOverlay">
-                            <button class="play-btn">▶</button>
+                            <button class="play-btn">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="white">
+                                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                </svg>
+                            </button>
                         </div>
                         <div class="video-placeholder" id="videoPlaceholder">
                             <div class="placeholder-content">
-                                <span class="placeholder-icon">📹</span>
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M23 7l-7 5 7 5V7z"></path>
+                                    <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+                                </svg>
                                 <p>Video content would load here</p>
                             </div>
                         </div>
@@ -55,19 +64,35 @@
                         <h3>Interactive Activity</h3>
                     </div>
                     <div class="activity-content">
-                        <button class="btn btn-primary try-it-btn" id="tryItBtn">🔧 Try It Yourself</button>
+                        <button class="btn btn-primary try-it-btn" id="tryItBtn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 6px;">
+                                <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
+                                <polyline points="13 2 13 9 20 9"></polyline>
+                            </svg>
+                            Try It Yourself
+                        </button>
                         <div class="code-editor hidden" id="codeEditor">
                             <textarea id="codeInput" placeholder="# Write your Python code here...
 x = 5
 y = 10
 print(x + y)"></textarea>
-                            <button class="btn btn-primary run-code-btn" id="runCodeBtn">▶ Run Code</button>
+                            <button class="btn btn-primary run-code-btn" id="runCodeBtn">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 6px;">
+                                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                </svg>
+                                Run Code
+                            </button>
                             <div class="code-output" id="codeOutput"></div>
                         </div>
                     </div>
 
                     <div class="feedback-section">
-                        <h4>💬 AI Companion Feedback</h4>
+                        <h4>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: inline; margin-right: 6px;">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                            AI Companion Feedback
+                        </h4>
                         <p id="feedbackText">Click "Try It Yourself" to start coding! I'm here to help if you get stuck.
                         </p>
                     </div>

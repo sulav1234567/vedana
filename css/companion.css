@@ -76,13 +76,13 @@
 
 .free-badge {
     background: #D1FAE5;
-    border: 1.5px solid #10B981;
+    border: 1px solid #10B981;
     color: #065F46;
 }
 
 .upcoming-badge {
     background: #FEF3C7;
-    border: 1.5px solid #F59E0B;
+    border: 1px solid #F59E0B;
     color: #92400E;
 }
 
