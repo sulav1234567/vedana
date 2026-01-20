@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedana - Select Materials</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/materials.css">
+</head>
+
+<body>
+    <div class="materials-container">
+        <div class="materials-content fade-in">
+            <h1>Select Learning Materials</h1>
+            <p class="subtitle">Choose a course to begin your learning journey</p>
+
+            <div class="course-selector glass">
+                <label for="courseSelect">Course</label>
+                <div class="select-wrapper">
+                    <select id="courseSelect" class="course-select">
+                        <option value="">-- Select a Course --</option>
+                        <option value="python-beg">Python Programming (Beginner): Learn & Grow</option>
+                        <option value="python-int">Python Programming (Intermediate)</option>
+                        <option value="english">Daily English: Be Confident in English Speaking</option>
+                        <option value="ai-intro">Introduction to Artificial Intelligence</option>
+                    </select>
+                    <span class="select-arrow">▼</span>
+                </div>
+            </div>
+
+            <button id="continueBtn" class="btn btn-primary continue-btn" disabled>Continue</button>
+
+            <!-- Upcoming Release Card -->
+            <div class="release-card glass">
+                <div class="release-badge">Upcoming Release</div>
+                <div class="release-content">
+                    <div class="release-text">
+                        <h2>Vedana for Children</h2>
+                        <h3>Meet Your Buddy "Timo" 🐻</h3>
+                        <p class="quote">"Go on adventures with your buddy Timo and learn colors, counting, and more!"
+                        </p>
+                        <div class="tags">
+                            <span class="tag">Counting</span>
+                            <span class="tag">Colors</span>
+                            <span class="tag">Shapes</span>
+                            <span class="tag">Adventures</span>
+                            <span class="tag">Games</span>
+                            <span class="tag">Storytelling</span>
+                        </div>
+                    </div>
+                    <div class="release-image">
+                        <div class="timo-placeholder">
+                            <span>🐻</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/materials.js"></script>
+</body>
+
+</html>

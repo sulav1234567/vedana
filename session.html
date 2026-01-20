@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedana - Learning Session</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/session.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+
+<body>
+    <div class="session-container">
+        <!-- Session Header -->
+        <header class="session-header glass">
+            <div class="session-header-left">
+                <div class="companion-avatar-small" id="sessionCompanion">
+                    <span>🤖</span>
+                </div>
+                <div class="session-title">
+                    <h1 id="lessonTitle">Python Variables & Data Types</h1>
+                    <span class="progress-indicator" id="progressIndicator">Lesson 1/5</span>
+                </div>
+            </div>
+            <button class="btn btn-secondary end-session-btn" onclick="endSession()">End Session</button>
+        </header>
+
+        <!-- Main Session Content -->
+        <div class="session-main">
+            <!-- Left Panel - Video and Activities -->
+            <div class="session-left">
+                <!-- Video Player -->
+                <div class="video-section glass">
+                    <div class="video-wrapper" id="videoWrapper">
+                        <video id="lessonVideo" class="lesson-video">
+                            <source src="" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="play-overlay" id="playOverlay">
+                            <button class="play-btn">▶</button>
+                        </div>
+                        <div class="video-placeholder" id="videoPlaceholder">
+                            <div class="placeholder-content">
+                                <span class="placeholder-icon">📹</span>
+                                <p>Video content would load here</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Activity Section -->
+                <div class="activity-section glass">
+                    <div class="activity-header">
+                        <h3>Interactive Activity</h3>
+                    </div>
+                    <div class="activity-content">
+                        <button class="btn btn-primary try-it-btn" id="tryItBtn">🔧 Try It Yourself</button>
+                        <div class="code-editor hidden" id="codeEditor">
+                            <textarea id="codeInput" placeholder="# Write your Python code here...
+x = 5
+y = 10
+print(x + y)"></textarea>
+                            <button class="btn btn-primary run-code-btn" id="runCodeBtn">▶ Run Code</button>
+                            <div class="code-output" id="codeOutput"></div>
+                        </div>
+                    </div>
+
+                    <div class="feedback-section">
+                        <h4>💬 AI Companion Feedback</h4>
+                        <p id="feedbackText">Click "Try It Yourself" to start coding! I'm here to help if you get stuck.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Panel - Lesson Content -->
+            <div class="session-right glass">
+                <div class="lesson-content" id="lessonContent">
+                    <h2>Python Variables & Data Types</h2>
+                    <p>Loading lesson content...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/session.js"></script>
+</body>
+
+</html>

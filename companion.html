@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedana - Choose Your Companion</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/companion.css">
+</head>
+
+<body>
+    <div class="companion-container">
+        <div class="companion-content fade-in">
+            <h1>Choose Your AI Companion</h1>
+            <p class="subtitle">Select a learning companion that matches your style</p>
+
+            <div class="companions-grid">
+                <!-- Mira Card -->
+                <div class="companion-card glass mira-card" data-companion="mira">
+                    <div class="companion-badge free-badge">Free</div>
+                    <div class="companion-icon">🌸</div>
+                    <h2>Mira</h2>
+                    <p class="personality">The Empathetic Guide</p>
+                    <p class="description">Warm, friendly, patient, encouraging, curious, empathetic</p>
+                    <div class="companion-footer">
+                        <button class="btn btn-primary select-btn">Select Mira</button>
+                    </div>
+                </div>
+
+                <!-- Riven Card -->
+                <div class="companion-card glass riven-card" data-companion="riven">
+                    <div class="companion-icon">⚡</div>
+                    <h2>Riven</h2>
+                    <p class="personality">The Smart Problem-Solver</p>
+                    <p class="description">Analytical, confident, witty, reliable, adventurous</p>
+                    <div class="companion-footer">
+                        <button class="btn btn-primary select-btn">Select Riven</button>
+                    </div>
+                </div>
+
+                <!-- Aria Card -->
+                <div class="companion-card glass aria-card" data-companion="aria">
+                    <div class="companion-icon">✨</div>
+                    <h2>Aria</h2>
+                    <p class="personality">The Creative Spark</p>
+                    <p class="description">Imaginative, cheerful, inspiring, artistic, supportive</p>
+                    <div class="companion-footer">
+                        <button class="btn btn-primary select-btn">Select Aria</button>
+                    </div>
+                </div>
+
+                <!-- Timo Card -->
+                <div class="companion-card glass timo-card" data-companion="timo">
+                    <div class="companion-badge upcoming-badge">Coming Soon</div>
+                    <div class="companion-icon">🐻</div>
+                    <h2>Timo</h2>
+                    <p class="personality">Your Playful Buddy</p>
+                    <p class="description">Go on adventures with Timo and learn through play!</p>
+                    <div class="companion-footer">
+                        <button class="btn btn-secondary select-btn" disabled>Coming Soon</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Selected Companion Info -->
+            <div id="companionInfo" class="companion-info-panel glass hidden">
+                <div class="info-content">
+                    <h3 id="infoTitle"></h3>
+                    <p id="infoDescription"></p>
+                    <button class="btn btn-primary" id="startLearningBtn">Start Learning</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/companion.js"></script>
+</body>
+
+</html>

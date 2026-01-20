@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedana - Dashboard</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar glass">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <svg width="32" height="32" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="48" height="48" rx="12" fill="url(#gradient)" />
+                        <path d="M24 12L32 18V30L24 36L16 30V18L24 12Z" fill="white" opacity="0.9" />
+                        <defs>
+                            <linearGradient id="gradient" x1="0" y1="0" x2="48" y2="48">
+                                <stop offset="0%" stop-color="#6366F1" />
+                                <stop offset="100%" stop-color="#8B5CF6" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <h2>Vedana</h2>
+                </div>
+                <button class="help-btn">?</button>
+            </div>
+
+            <!-- Menu Section -->
+            <div class="menu-section">
+                <p class="section-label">Menu</p>
+                <nav class="nav-menu">
+                    <a href="#" class="nav-item active">
+                        <span class="nav-icon">📊</span>
+                        <span>Dashboard</span>
+                    </a>
+                    <a href="#" class="nav-item expandable">
+                        <span class="nav-icon">👨‍🏫</span>
+                        <span>Teachers</span>
+                        <span class="expand-arrow">›</span>
+                    </a>
+                    <a href="#" class="nav-item expandable">
+                        <span class="nav-icon">🎓</span>
+                        <span>Students</span>
+                        <span class="expand-arrow">›</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <span class="nav-icon">💡</span>
+                        <span>Quiz</span>
+                    </a>
+                    <a href="#" class="nav-item expandable">
+                        <span class="nav-icon">📚</span>
+                        <span>Course</span>
+                        <span class="expand-arrow">›</span>
+                    </a>
+                </nav>
+            </div>
+
+            <!-- AI Section -->
+            <div class="menu-section">
+                <p class="section-label">AI</p>
+                <nav class="nav-menu">
+                    <a href="companion.html" class="nav-item highlighted">
+                        <span class="nav-icon">🤖</span>
+                        <span>VedanaAI</span>
+                    </a>
+                </nav>
+            </div>
+
+            <!-- Management Section -->
+            <div class="menu-section">
+                <p class="section-label">Management</p>
+                <nav class="nav-menu">
+                    <a href="#" class="nav-item">
+                        <span class="nav-icon">👥</span>
+                        <span>SubAdmins</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <span class="nav-icon">🛡️</span>
+                        <span>Moderators</span>
+                    </a>
+                </nav>
+            </div>
+
+            <!-- Communication Section -->
+            <div class="menu-section">
+                <p class="section-label">Communication</p>
+                <nav class="nav-menu">
+                    <a href="#" class="nav-item">
+                        <span class="nav-icon">💬</span>
+                        <span>Chat</span>
+                    </a>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <div class="header-left">
+                    <h1>Vedana Space</h1>
+                    <a href="#" class="upgrade-badge">
+                        <span>👑</span>
+                        <span>Upgrade to Vedana Pro</span>
+                    </a>
+                </div>
+                <div class="header-right">
+                    <button class="notification-btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" />
+                            <path d="M13.73 21a2 2 0 0 1-3.46 0" />
+                        </svg>
+                        <span class="notification-badge">3</span>
+                    </button>
+                    <div class="user-info">
+                        <span class="plan-badge">Free Plan</span>
+                        <div class="user-avatar" id="userAvatar">
+                            <span id="userInitials">U</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Welcome Section -->
+            <section class="welcome-section">
+                <h2>Hello, <span id="userName">Learner</span>! 👋</h2>
+                <p>Ready to continue your learning journey? Your AI Companions are waiting!</p>
+            </section>
+
+            <!-- AI Companion Card -->
+            <div class="companion-card glass">
+                <div class="companion-info">
+                    <div class="companion-avatar">
+                        <span>🤖</span>
+                    </div>
+                    <div class="companion-message">
+                        <strong>Mira:</strong>
+                        <p>"I noticed where you struggled yesterday. I've adjusted today's session."</p>
+                    </div>
+                </div>
+                <div class="companion-actions">
+                    <button class="btn btn-secondary">💬 Talk to Mira</button>
+                    <button class="btn btn-primary" onclick="window.location.href='materials.html'">▶ Start
+                        Session</button>
+                </div>
+            </div>
+
+            <!-- Focus Cards -->
+            <div class="focus-cards">
+                <div class="focus-card glass">
+                    <h3>🎯 Today's Focus</h3>
+                    <hr>
+                    <p class="focus-title">Python Variables & Data Types</p>
+                    <ul class="focus-details">
+                        <li>Estimated time: 15 min</li>
+                        <li>Goal: Understand variable assignment</li>
+                    </ul>
+                </div>
+                <div class="focus-card glass">
+                    <h3>📅 Next Up</h3>
+                    <hr>
+                    <p class="focus-title">Control Flow & Loops</p>
+                    <ul class="focus-details">
+                        <li>Estimated time: 20 min</li>
+                        <li>Goal: Master conditionals and loops</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Stats Section -->
+            <div class="stats-section">
+                <div class="stat-card glass">
+                    <h2 id="totalSessions">0</h2>
+                    <p>Total Sessions</p>
+                </div>
+                <div class="stat-card glass">
+                    <h2 id="totalTime">0h 0m</h2>
+                    <p>Total Time</p>
+                </div>
+                <div class="stat-card glass">
+                    <h2 id="streak">0 Days</h2>
+                    <p>Learning Streak</p>
+                </div>
+                <div class="stat-card glass">
+                    <h2 id="level">Level 1</h2>
+                    <p id="xpText">0 XP / 100 XP</p>
+                    <div class="progress-bar">
+                        <div class="progress" id="xpProgress"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Activity Section -->
+            <div class="activity-section">
+                <div class="activity-card glass">
+                    <h3>📊 Weekly Activity</h3>
+                    <div class="activity-chart">
+                        <div class="bar" style="height: 40%;">
+                            <span class="bar-label">Sun</span>
+                        </div>
+                        <div class="bar" style="height: 70%;">
+                            <span class="bar-label">Mon</span>
+                        </div>
+                        <div class="bar" style="height: 30%;">
+                            <span class="bar-label">Tue</span>
+                        </div>
+                        <div class="bar" style="height: 45%;">
+                            <span class="bar-label">Wed</span>
+                        </div>
+                        <div class="bar" style="height: 38%;">
+                            <span class="bar-label">Thu</span>
+                        </div>
+                        <div class="bar" style="height: 60%;">
+                            <span class="bar-label">Fri</span>
+                        </div>
+                        <div class="bar" style="height: 80%;">
+                            <span class="bar-label">Sat</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="badges-card glass">
+                    <h3>🎖️ Earned Badges</h3>
+                    <div class="badges-grid">
+                        <div class="badge-item">
+                            <span class="badge-icon">🌟</span>
+                            <p>First Step</p>
+                        </div>
+                        <div class="badge-item empty">
+                            <span class="badge-icon">🔒</span>
+                            <p>Locked</p>
+                        </div>
+                        <div class="badge-item empty">
+                            <span class="badge-icon">🔒</span>
+                            <p>Locked</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/dashboard.js"></script>
+</body>
+
+</html>

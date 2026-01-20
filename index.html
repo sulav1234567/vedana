@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedana - Welcome</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <div class="auth-container">
+        <!-- Left Side - Branding -->
+        <div class="auth-left">
+            <div class="brand-content">
+                <div class="logo">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="48" height="48" rx="12" fill="url(#gradient)" />
+                        <path d="M24 12L32 18V30L24 36L16 30V18L24 12Z" fill="white" opacity="0.9" />
+                        <defs>
+                            <linearGradient id="gradient" x1="0" y1="0" x2="48" y2="48">
+                                <stop offset="0%" stop-color="#6366F1" />
+                                <stop offset="100%" stop-color="#8B5CF6" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <h1>Vedana</h1>
+                </div>
+                <p class="tagline">Personalized Learning with AI Companions</p>
+                <div class="features">
+                    <div class="feature-item">
+                        <span class="icon">🤖</span>
+                        <div>
+                            <h3>Personalized AI Tutors</h3>
+                            <p>Choose from Mira, Riven, Aria, or Timo</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <span class="icon">📊</span>
+                        <div>
+                            <h3>Track Your Progress</h3>
+                            <p>Monitor your learning journey with detailed stats</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <span class="icon">🎯</span>
+                        <div>
+                            <h3>Adaptive Learning</h3>
+                            <p>Content adjusts to your pace and style</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Side - Forms -->
+        <div class="auth-right">
+            <div class="form-container glass">
+                <h2 id="formTitle">Welcome Back</h2>
+                <p id="formSubtitle">Sign in to continue your learning journey</p>
+
+                <!-- Login Form -->
+                <form id="loginForm" class="auth-form">
+                    <div class="input-group">
+                        <label for="loginUsername">Username</label>
+                        <input type="text" id="loginUsername" class="input" placeholder="Enter your username" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="loginPassword">Password</label>
+                        <input type="password" id="loginPassword" class="input" placeholder="Enter your password"
+                            required>
+                    </div>
+                    <button type="submit" class="btn btn-primary full-width">Sign In</button>
+                </form>
+
+                <!-- Signup Form (Hidden) -->
+                <form id="signupForm" class="auth-form hidden">
+                    <div class="input-group">
+                        <label for="signupFullname">Full Name</label>
+                        <input type="text" id="signupFullname" class="input" placeholder="Enter your full name"
+                            required>
+                    </div>
+                    <div class="input-group">
+                        <label for="signupUsername">Username</label>
+                        <input type="text" id="signupUsername" class="input" placeholder="Choose a username" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="signupEmail">Email</label>
+                        <input type="email" id="signupEmail" class="input" placeholder="Enter your email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="signupPassword">Password</label>
+                        <input type="password" id="signupPassword" class="input" placeholder="Create a password"
+                            required>
+                    </div>
+                    <div class="input-group">
+                        <label for="signupConfirmPassword">Confirm Password</label>
+                        <input type="password" id="signupConfirmPassword" class="input"
+                            placeholder="Confirm your password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary full-width">Create Account</button>
+                </form>
+
+                <div class="form-toggle">
+                    <p id="toggleText">Don't have an account? <a href="#" id="toggleLink">Sign Up</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/auth.js"></script>
+</body>
+
+</html>
