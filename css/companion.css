@@ -143,7 +143,7 @@
 }
 
 .mira-card .companion-icon {
-    background: linear-gradient(135deg, #EC4899 0%, #F472B6 100%);
+    background: #EC4899;
 }
 
 .riven-card {
@@ -151,7 +151,7 @@
 }
 
 .riven-card .companion-icon {
-    background: linear-gradient(135deg, #3B82F6 0%, #60A5FA 100%);
+    background: #3B82F6;
 }
 
 .aria-card {
@@ -159,7 +159,7 @@
 }
 
 .aria-card .companion-icon {
-    background: linear-gradient(135deg, #A855F7 0%, #C084FC 100%);
+    background: #A855F7;
 }
 
 .timo-card {
@@ -168,7 +168,7 @@
 }
 
 .timo-card .companion-icon {
-    background: linear-gradient(135deg, #10B981 0%, #34D399 100%);
+    background: #10B981;
 }
 
 /* ===== INFO PANEL ===== */
