@@ -1,5 +1,5 @@
 /* ============================================
-   MATERIALS SELECTION PAGE STYLES - WHITE THEME
+   MATERIALS SELECTION PAGE STYLES - PROFESSIONAL
    ============================================ */
 
 .materials-container {
@@ -17,13 +17,15 @@
 }
 
 .materials-content h1 {
-    font-size: var(--font-size-3xl);
+    font-size: var(--font-size-4xl);
     text-align: center;
     margin-bottom: var(--spacing-sm);
-    background: linear-gradient(135deg, #6366F1 0%, #A855F7 100%);
+    background: linear-gradient(135deg, #7C3AED 0%, #A855F7 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    font-weight: 800;
+    letter-spacing: -0.5px;
 }
 
 .subtitle {
@@ -31,25 +33,33 @@
     color: var(--text-secondary);
     margin-bottom: var(--spacing-xl);
     font-size: var(--font-size-lg);
+    letter-spacing: 0.2px;
 }
 
 /* ===== COURSE SELECTOR ===== */
 .course-selector {
     background: var(--bg-primary);
-    border: 1px solid var(--border-light);
+    border: 1.5px solid var(--border-light);
     padding: var(--spacing-lg);
     border-radius: var(--radius-xl);
     margin-bottom: var(--spacing-md);
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-base);
+}
+
+.course-selector:hover {
+    border-color: var(--border-medium);
+    box-shadow: var(--shadow-lg);
 }
 
 .course-selector label {
     display: block;
     margin-bottom: var(--spacing-sm);
     font-size: var(--font-size-sm);
-    font-weight: 600;
-    color: var(--text-secondary);
+    font-weight: 700;
+    color: var(--text-primary);
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 1.2px;
 }
 
 .select-wrapper {
@@ -61,11 +71,11 @@
     padding: 16px 20px;
     padding-right: 50px;
     background: var(--bg-primary);
-    border: 1px solid var(--border-light);
+    border: 1.5px solid var(--border-light);
     border-radius: var(--radius-md);
     color: var(--text-primary);
     font-size: var(--font-size-lg);
-    font-weight: 500;
+    font-weight: 600;
     cursor: pointer;
     transition: all var(--transition-base);
     appearance: none;
@@ -78,12 +88,14 @@
 .course-select:focus {
     outline: none;
     border-color: var(--primary-600);
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.1);
 }
 
 .course-select option {
     background: var(--bg-primary);
     color: var(--text-primary);
     padding: 12px;
+    font-weight: 600;
 }
 
 .select-arrow {
@@ -101,8 +113,9 @@
     width: 100%;
     padding: 18px 24px;
     font-size: var(--font-size-xl);
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: var(--spacing-xl);
+    letter-spacing: 0.3px;
 }
 
 .continue-btn:disabled {
@@ -113,11 +126,18 @@
 /* ===== RELEASE CARD ===== */
 .release-card {
     background: var(--bg-primary);
-    border: 1px solid var(--border-light);
+    border: 1.5px solid var(--border-light);
     padding: var(--spacing-xl);
     border-radius: var(--radius-xl);
     position: relative;
     overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-base);
+}
+
+.release-card:hover {
+    border-color: var(--border-medium);
+    box-shadow: var(--shadow-lg);
 }
 
 .release-card::before {
@@ -126,21 +146,21 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 4px;
+    height: 5px;
     background: linear-gradient(90deg, #10B981 0%, #34D399 100%);
 }
 
 .release-badge {
     display: inline-block;
-    padding: 8px 16px;
+    padding: 10px 18px;
     background: #D1FAE5;
-    border: 1px solid #10B981;
+    border: 1.5px solid #10B981;
     border-radius: var(--radius-md);
     color: #065F46;
     font-size: var(--font-size-sm);
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 1.2px;
     margin-bottom: var(--spacing-md);
 }
 
