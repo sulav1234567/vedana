@@ -17,21 +17,12 @@
     justify-content: center;
     padding: var(--spacing-xl);
     position: relative;
-    background: linear-gradient(135deg, #7C3AED 0%, #A855F7 100%);
+    background: var(--primary-600);
     overflow: hidden;
 }
 
 .auth-left::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    right: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
-    background-size: 50px 50px;
-    animation: float 20s linear infinite;
-    z-index: 0;
+    display: none;
 }
 
 @keyframes float {
@@ -48,7 +39,6 @@
     position: relative;
     z-index: 1;
     max-width: 500px;
-    animation: fadeIn 0.8s ease-out;
 }
 
 .logo {
@@ -64,7 +54,6 @@
     color: white;
     margin: 0;
     letter-spacing: -1px;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .tagline {
@@ -86,16 +75,14 @@
     align-items: flex-start;
     gap: var(--spacing-md);
     padding: var(--spacing-md);
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.08);
     border-radius: var(--radius-lg);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    transition: all var(--transition-base);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: background var(--transition-base);
 }
 
 .feature-item:hover {
-    background: rgba(255, 255, 255, 0.15);
-    transform: translateX(8px);
+    background: rgba(255, 255, 255, 0.12);
 }
 
 .feature-item .icon {
@@ -133,8 +120,6 @@
     border-radius: var(--radius-xl);
     border: 1px solid var(--border-light);
     background: var(--bg-primary);
-    box-shadow: var(--shadow-lg);
-    animation: fadeIn 0.8s ease-out 0.2s both;
 }
 
 .form-container h2 {
